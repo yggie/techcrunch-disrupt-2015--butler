@@ -28,6 +28,7 @@
 		7BEE8C051C136E29000C7521 /* UserAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BF51C136E29000C7521 /* UserAPI.m */; };
 		7BEE8C061C136E29000C7521 /* HummAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BF81C136E29000C7521 /* HummAPI.m */; };
 		7BEE8C071C136E29000C7521 /* AFNetworkActivityLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BFA1C136E29000C7521 /* AFNetworkActivityLogger.m */; };
+		93BA72BA1C1392D300AE6DA2 /* ScheduleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BA72B91C1392D300AE6DA2 /* ScheduleItem.m */; };
 		EA36A9A5C1F05B90C7D8834F /* libPods-myhumm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8972EE0BE285C456C0894956 /* libPods-myhumm.a */; };
 /* End PBXBuildFile section */
 
@@ -50,8 +51,8 @@
 
 /* Begin PBXFileReference section */
 		21661BFA046EA132D795AF5B /* Pods-myhumm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myhumm.release.xcconfig"; path = "Pods/Target Support Files/Pods-myhumm/Pods-myhumm.release.xcconfig"; sourceTree = "<group>"; };
-		7B68D34F1C138E7F00B9CA58 /* ScheduleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScheduleService.h; path = myhumm/ScheduleService.h; sourceTree = "<group>"; };
-		7B68D3501C138E7F00B9CA58 /* ScheduleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduleService.m; path = myhumm/ScheduleService.m; sourceTree = "<group>"; };
+		7B68D34F1C138E7F00B9CA58 /* ScheduleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleService.h; sourceTree = "<group>"; };
+		7B68D3501C138E7F00B9CA58 /* ScheduleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleService.m; sourceTree = "<group>"; };
 		7BEE8BAB1C136C68000C7521 /* myhumm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myhumm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BEE8BAF1C136C68000C7521 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BEE8BB11C136C68000C7521 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -94,6 +95,8 @@
 		7BEE8BFA1C136E29000C7521 /* AFNetworkActivityLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityLogger.m; sourceTree = "<group>"; };
 		8972EE0BE285C456C0894956 /* libPods-myhumm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myhumm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		927F1D0A3E548D6CEE8DA98E /* Pods-myhumm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myhumm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myhumm/Pods-myhumm.debug.xcconfig"; sourceTree = "<group>"; };
+		93BA72B81C1392D300AE6DA2 /* ScheduleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleItem.h; sourceTree = "<group>"; };
+		93BA72B91C1392D300AE6DA2 /* ScheduleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +145,6 @@
 		7BEE8BA21C136C68000C7521 = {
 			isa = PBXGroup;
 			children = (
-				7B68D34F1C138E7F00B9CA58 /* ScheduleService.h */,
-				7B68D3501C138E7F00B9CA58 /* ScheduleService.m */,
 				7BEE8BAD1C136C68000C7521 /* myhumm */,
 				7BEE8BC71C136C69000C7521 /* myhummTests */,
 				7BEE8BD21C136C69000C7521 /* myhummUITests */,
@@ -166,6 +167,9 @@
 		7BEE8BAD1C136C68000C7521 /* myhumm */ = {
 			isa = PBXGroup;
 			children = (
+				93BA72B71C13929A00AE6DA2 /* Models */,
+				7B68D34F1C138E7F00B9CA58 /* ScheduleService.h */,
+				7B68D3501C138E7F00B9CA58 /* ScheduleService.m */,
 				7BEE8BFB1C136E29000C7521 /* myhumm-ios-sdk */,
 				7BEE8BB11C136C68000C7521 /* AppDelegate.h */,
 				7BEE8BB21C136C68000C7521 /* AppDelegate.m */,
@@ -253,6 +257,15 @@
 			);
 			name = "myhumm-ios-sdk";
 			path = "../../humm-ios-sdk/wrapper";
+			sourceTree = "<group>";
+		};
+		93BA72B71C13929A00AE6DA2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93BA72B81C1392D300AE6DA2 /* ScheduleItem.h */,
+				93BA72B91C1392D300AE6DA2 /* ScheduleItem.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,6 +459,7 @@
 				7BEE8C011C136E29000C7521 /* ArtistsAPI.m in Sources */,
 				7BEE8BB31C136C68000C7521 /* AppDelegate.m in Sources */,
 				7BEE8BFC1C136E29000C7521 /* Artist.m in Sources */,
+				93BA72BA1C1392D300AE6DA2 /* ScheduleItem.m in Sources */,
 				7BEE8C051C136E29000C7521 /* UserAPI.m in Sources */,
 				7BEE8BFD1C136E29000C7521 /* LoginInfo.m in Sources */,
 				7BEE8BB01C136C68000C7521 /* main.m in Sources */,

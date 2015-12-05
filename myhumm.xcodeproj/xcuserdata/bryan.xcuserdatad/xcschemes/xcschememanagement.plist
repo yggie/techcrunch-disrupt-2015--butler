@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>myhumm.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>7BEE8BAA1C136C68000C7521</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7BEE8BC31C136C69000C7521</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7BEE8BCE1C136C69000C7521</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F857B0EE6E56BF19A69E1E5543253BF0CEBF65E5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "03EC5CE8C768F86E0546AA0A30842D8F46F5E9DB" : 0,
+    "F857B0EE6E56BF19A69E1E5543253BF0CEBF65E5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "327BE4F9-252A-4B52-8A83-58284F9F8019",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "03EC5CE8C768F86E0546AA0A30842D8F46F5E9DB" : "humm-ios-sdk\/",
+    "F857B0EE6E56BF19A69E1E5543253BF0CEBF65E5" : "disrupt-europe-2015--butler-disrupt\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "myhumm",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "myhumm.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/myhumm\/humm-ios-sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03EC5CE8C768F86E0546AA0A30842D8F46F5E9DB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:team-icomic\/butler-disrupt.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F857B0EE6E56BF19A69E1E5543253BF0CEBF65E5"
+    }
+  ]
+}

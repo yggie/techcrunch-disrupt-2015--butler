@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ScheduleService : NSObject
+@interface ScheduleService : NSObject {
+    NSCalendar *calendar;
+}
 
+- (ScheduleService*)init;
 - (NSArray*)someArray;
 
 @end
