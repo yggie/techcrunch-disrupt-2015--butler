@@ -40,6 +40,7 @@
 		7BEE8C061C136E29000C7521 /* HummAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BF81C136E29000C7521 /* HummAPI.m */; };
 		7BEE8C071C136E29000C7521 /* AFNetworkActivityLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BFA1C136E29000C7521 /* AFNetworkActivityLogger.m */; };
 		93BA72BA1C1392D300AE6DA2 /* ScheduleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BA72B91C1392D300AE6DA2 /* ScheduleItem.m */; };
+		93BA72BD1C139C6700AE6DA2 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BA72BC1C139C6700AE6DA2 /* RootViewController.m */; };
 		EA36A9A5C1F05B90C7D8834F /* libPods-myhumm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8972EE0BE285C456C0894956 /* libPods-myhumm.a */; };
 /* End PBXBuildFile section */
 
@@ -120,6 +121,8 @@
 		927F1D0A3E548D6CEE8DA98E /* Pods-myhumm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myhumm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myhumm/Pods-myhumm.debug.xcconfig"; sourceTree = "<group>"; };
 		93BA72B81C1392D300AE6DA2 /* ScheduleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleItem.h; sourceTree = "<group>"; };
 		93BA72B91C1392D300AE6DA2 /* ScheduleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleItem.m; sourceTree = "<group>"; };
+		93BA72BB1C139C6700AE6DA2 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		93BA72BC1C139C6700AE6DA2 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +224,8 @@
 				7BEE8BBC1C136C68000C7521 /* LaunchScreen.storyboard */,
 				7BEE8BBF1C136C68000C7521 /* Info.plist */,
 				7BEE8BAE1C136C68000C7521 /* Supporting Files */,
+				93BA72BB1C139C6700AE6DA2 /* RootViewController.h */,
+				93BA72BC1C139C6700AE6DA2 /* RootViewController.m */,
 			);
 			path = myhumm;
 			sourceTree = "<group>";
@@ -519,6 +524,7 @@
 				7B68D3511C138E7F00B9CA58 /* ScheduleService.m in Sources */,
 				7BEE8C071C136E29000C7521 /* AFNetworkActivityLogger.m in Sources */,
 				7BEE8C041C136E29000C7521 /* SongsAPI.m in Sources */,
+				93BA72BD1C139C6700AE6DA2 /* RootViewController.m in Sources */,
 				7BEE8C031C136E29000C7521 /* PlaylistsAPI.m in Sources */,
 				7B68D3541C139B4A00B9CA58 /* Sky.m in Sources */,
 				7BEE8C021C136E29000C7521 /* OthersAPI.m in Sources */,

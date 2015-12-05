@@ -7,15 +7,23 @@
 //
 
 #include <stdlib.h>
+#import "HummAPI.h"
+#import "PlaylistsAPI.h"
+#import "Song.h"
 #import "ScheduleService.h"
 #import "ScheduleItem.h"
 
-@implementation ScheduleService
+@implementation ScheduleService {
+    HummAPI *humm;
+}
 
 - (ScheduleService*)init {
     self = [super init];
 
     self->calendar = [NSCalendar currentCalendar];
+    
+    self->humm = [HummAPI sharedManager];
+    [self authenticateHumm];
 
     return self;
 }
@@ -52,6 +60,28 @@
     [components setSecond:0];
 
     return [self->calendar dateFromComponents:components];
+}
+
+#pragma mark HUMM
+
+-(void)authenticateHumm{
+    [self->humm loginWithUsername:@"kanke" password:@"Windows6" onLoginSuccess:^{
+        [self getPlaylist];
+    } onLoginError:^(NSError *error) {
+        NSLog(@"There was an error");
+    }];
+}
+
+-(void)getPlaylist {
+    [self->humm.playlists getSongs:@"56403fd834017507dba11880" limit:20 offset:0 success:^(NSArray<Song *> *response) {
+        
+        for (Song *song in response) {
+            NSLog(@"song name = %@", song.title);
+        }
+        
+    } error:^(NSError *error) {
+        
+    }];
 }
 
 @end
