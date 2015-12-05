@@ -82,6 +82,7 @@
 #import "Song.h"
 #import "ScheduleService.h"
 #import "ScheduleItem.h"
+#import "Sky.h"
 
 @interface ViewController () {
     NSDateFormatter *formatter;
@@ -93,7 +94,7 @@
 
 @property NSArray *scheduleItems;
 @property ScheduleService *service;
-
+@property NSMutableArray *movieList;
 @end
 
 @implementation ViewController
@@ -110,6 +111,29 @@
     
     self->formatter = [NSDateFormatter new];
     [self->formatter setDateFormat:@"HH:mm"];
+    
+    //Sky *movie = [Sky new];
+    //movie.name =@"Epic kk movie";
+    //movie.genre = @"horror";
+    _movieList = [NSMutableArray new];
+    [_movieList addObject:[[Sky new] name:@"RTÉ News: One O'Clock and Farming Weather" :@"news" :@"1"]];
+    [_movieList addObject:[[Sky new] name:@"The Simpsons: The Changing of the Guardian" :@"animation;comedy" :@"2"]];
+    [_movieList addObject:[[Sky new] name:@"Henry Danger: Mo' Danger, Mo' Problems" :@"comedy" :@"3"]];
+    [_movieList addObject:[[Sky new] name:@"Through the Night" :@"news" :@"4"]];
+    [_movieList addObject:[[Sky new] name:@"The Green Green Grass: Brothers and Sisters" :@"comedy" :@"5"]];
+    [_movieList addObject:[[Sky new] name:@"Family Guy: Untitled Griffin Family History" :@"animation;comedy" :@"6"]];
+    [_movieList addObject:[[Sky new] name:@"Austin & Ally: Relationships & Red Carpets" :@"comedy" :@"7"]];
+    [_movieList addObject:[[Sky new] name:@"Hospital Sydney" :@"medical;reality" :@"8"]];
+    [_movieList addObject:[[Sky new] name:@"Chuggington: Back Up Brewster" :@"cartoons" :@"9"]];
+    [_movieList addObject:[[Sky new] name:@"Get Your Rocks Off!" :@"rock" :@"10"]];
+    
+    
+}
+
+-(Sky *)randomiseSky{
+    int random = arc4random_uniform(9);
+    return (Sky *)[_movieList objectAtIndex:random];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -120,6 +144,8 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self becomeFirstResponder];
+    Sky *randomSky = [self randomiseSky];
+    NSLog(@"Random name: %@", randomSky.name);
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -142,7 +168,7 @@
 
         for (Song  *song in response)
         {
-            NSLog(@"song name = %@", song.title);
+            //NSLog(@"song name = %@", song.title);
         }
 
     } error:^(NSError *error) {

@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		7B68D3511C138E7F00B9CA58 /* ScheduleService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B68D3501C138E7F00B9CA58 /* ScheduleService.m */; };
+		7B68D3541C139B4A00B9CA58 /* Sky.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B68D3531C139B4A00B9CA58 /* Sky.m */; };
+		7B68D3571C13A9E700B9CA58 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7B68D3561C13A9E700B9CA58 /* 1.jpeg */; };
+		7B68D3591C13AA4200B9CA58 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7B68D3581C13AA4200B9CA58 /* 2.jpeg */; };
+		7B68D35B1C13AA6900B9CA58 /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7B68D35A1C13AA6900B9CA58 /* 3.jpeg */; };
+		7B68D35D1C13AA8700B9CA58 /* 4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7B68D35C1C13AA8700B9CA58 /* 4.jpeg */; };
+		7B68D35F1C13AA9C00B9CA58 /* 5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7B68D35E1C13AA9C00B9CA58 /* 5.jpeg */; };
+		7B68D3611C13AAB500B9CA58 /* 6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7B68D3601C13AAB500B9CA58 /* 6.jpeg */; };
+		7B68D3631C13AAD100B9CA58 /* 7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7B68D3621C13AAD100B9CA58 /* 7.jpeg */; };
+		7B68D3651C13AAE500B9CA58 /* 8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7B68D3641C13AAE500B9CA58 /* 8.jpeg */; };
+		7B68D3671C13AAF700B9CA58 /* 9.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7B68D3661C13AAF700B9CA58 /* 9.jpeg */; };
+		7B68D3691C13AB5800B9CA58 /* 10.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7B68D3681C13AB5800B9CA58 /* 10.jpeg */; };
 		7BEE8BB01C136C68000C7521 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BAF1C136C68000C7521 /* main.m */; };
 		7BEE8BB31C136C68000C7521 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BB21C136C68000C7521 /* AppDelegate.m */; };
 		7BEE8BB61C136C68000C7521 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BB51C136C68000C7521 /* ViewController.m */; };
@@ -53,6 +64,18 @@
 		21661BFA046EA132D795AF5B /* Pods-myhumm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myhumm.release.xcconfig"; path = "Pods/Target Support Files/Pods-myhumm/Pods-myhumm.release.xcconfig"; sourceTree = "<group>"; };
 		7B68D34F1C138E7F00B9CA58 /* ScheduleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleService.h; sourceTree = "<group>"; };
 		7B68D3501C138E7F00B9CA58 /* ScheduleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleService.m; sourceTree = "<group>"; };
+		7B68D3521C139B4A00B9CA58 /* Sky.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sky.h; sourceTree = "<group>"; };
+		7B68D3531C139B4A00B9CA58 /* Sky.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sky.m; sourceTree = "<group>"; };
+		7B68D3561C13A9E700B9CA58 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
+		7B68D3581C13AA4200B9CA58 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
+		7B68D35A1C13AA6900B9CA58 /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpeg; sourceTree = "<group>"; };
+		7B68D35C1C13AA8700B9CA58 /* 4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpeg; sourceTree = "<group>"; };
+		7B68D35E1C13AA9C00B9CA58 /* 5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpeg; sourceTree = "<group>"; };
+		7B68D3601C13AAB500B9CA58 /* 6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpeg; sourceTree = "<group>"; };
+		7B68D3621C13AAD100B9CA58 /* 7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpeg; sourceTree = "<group>"; };
+		7B68D3641C13AAE500B9CA58 /* 8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpeg; sourceTree = "<group>"; };
+		7B68D3661C13AAF700B9CA58 /* 9.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpeg; sourceTree = "<group>"; };
+		7B68D3681C13AB5800B9CA58 /* 10.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpeg; sourceTree = "<group>"; };
 		7BEE8BAB1C136C68000C7521 /* myhumm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myhumm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BEE8BAF1C136C68000C7521 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BEE8BB11C136C68000C7521 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -142,6 +165,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7B68D3551C13A87C00B9CA58 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				7B68D3681C13AB5800B9CA58 /* 10.jpeg */,
+				7B68D3661C13AAF700B9CA58 /* 9.jpeg */,
+				7B68D3641C13AAE500B9CA58 /* 8.jpeg */,
+				7B68D3621C13AAD100B9CA58 /* 7.jpeg */,
+				7B68D3601C13AAB500B9CA58 /* 6.jpeg */,
+				7B68D35E1C13AA9C00B9CA58 /* 5.jpeg */,
+				7B68D35C1C13AA8700B9CA58 /* 4.jpeg */,
+				7B68D35A1C13AA6900B9CA58 /* 3.jpeg */,
+				7B68D3581C13AA4200B9CA58 /* 2.jpeg */,
+				7B68D3561C13A9E700B9CA58 /* 1.jpeg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		7BEE8BA21C136C68000C7521 = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +207,7 @@
 		7BEE8BAD1C136C68000C7521 /* myhumm */ = {
 			isa = PBXGroup;
 			children = (
+				7B68D3551C13A87C00B9CA58 /* images */,
 				93BA72B71C13929A00AE6DA2 /* Models */,
 				7B68D34F1C138E7F00B9CA58 /* ScheduleService.h */,
 				7B68D3501C138E7F00B9CA58 /* ScheduleService.m */,
@@ -264,6 +305,8 @@
 			children = (
 				93BA72B81C1392D300AE6DA2 /* ScheduleItem.h */,
 				93BA72B91C1392D300AE6DA2 /* ScheduleItem.m */,
+				7B68D3521C139B4A00B9CA58 /* Sky.h */,
+				7B68D3531C139B4A00B9CA58 /* Sky.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -377,9 +420,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B68D35F1C13AA9C00B9CA58 /* 5.jpeg in Resources */,
+				7B68D3651C13AAE500B9CA58 /* 8.jpeg in Resources */,
+				7B68D35D1C13AA8700B9CA58 /* 4.jpeg in Resources */,
+				7B68D35B1C13AA6900B9CA58 /* 3.jpeg in Resources */,
+				7B68D3671C13AAF700B9CA58 /* 9.jpeg in Resources */,
+				7B68D3631C13AAD100B9CA58 /* 7.jpeg in Resources */,
 				7BEE8BBE1C136C68000C7521 /* LaunchScreen.storyboard in Resources */,
 				7BEE8BBB1C136C68000C7521 /* Assets.xcassets in Resources */,
+				7B68D3691C13AB5800B9CA58 /* 10.jpeg in Resources */,
 				7BEE8BB91C136C68000C7521 /* Main.storyboard in Resources */,
+				7B68D3571C13A9E700B9CA58 /* 1.jpeg in Resources */,
+				7B68D3611C13AAB500B9CA58 /* 6.jpeg in Resources */,
+				7B68D3591C13AA4200B9CA58 /* 2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +520,7 @@
 				7BEE8C071C136E29000C7521 /* AFNetworkActivityLogger.m in Sources */,
 				7BEE8C041C136E29000C7521 /* SongsAPI.m in Sources */,
 				7BEE8C031C136E29000C7521 /* PlaylistsAPI.m in Sources */,
+				7B68D3541C139B4A00B9CA58 /* Sky.m in Sources */,
 				7BEE8C021C136E29000C7521 /* OthersAPI.m in Sources */,
 				7BEE8C061C136E29000C7521 /* HummAPI.m in Sources */,
 			);
