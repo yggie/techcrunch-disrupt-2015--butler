@@ -15,6 +15,19 @@
 		7BEE8BBE1C136C68000C7521 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BEE8BBC1C136C68000C7521 /* LaunchScreen.storyboard */; };
 		7BEE8BC91C136C69000C7521 /* myhummTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BC81C136C69000C7521 /* myhummTests.m */; };
 		7BEE8BD41C136C69000C7521 /* myhummUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BD31C136C69000C7521 /* myhummUITests.m */; };
+		7BEE8BFC1C136E29000C7521 /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BE21C136E29000C7521 /* Artist.m */; };
+		7BEE8BFD1C136E29000C7521 /* LoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BE41C136E29000C7521 /* LoginInfo.m */; };
+		7BEE8BFE1C136E29000C7521 /* Playlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BE61C136E29000C7521 /* Playlist.m */; };
+		7BEE8BFF1C136E29000C7521 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BE81C136E29000C7521 /* Song.m */; };
+		7BEE8C001C136E29000C7521 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BEA1C136E29000C7521 /* User.m */; };
+		7BEE8C011C136E29000C7521 /* ArtistsAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BED1C136E29000C7521 /* ArtistsAPI.m */; };
+		7BEE8C021C136E29000C7521 /* OthersAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BEF1C136E29000C7521 /* OthersAPI.m */; };
+		7BEE8C031C136E29000C7521 /* PlaylistsAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BF11C136E29000C7521 /* PlaylistsAPI.m */; };
+		7BEE8C041C136E29000C7521 /* SongsAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BF31C136E29000C7521 /* SongsAPI.m */; };
+		7BEE8C051C136E29000C7521 /* UserAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BF51C136E29000C7521 /* UserAPI.m */; };
+		7BEE8C061C136E29000C7521 /* HummAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BF81C136E29000C7521 /* HummAPI.m */; };
+		7BEE8C071C136E29000C7521 /* AFNetworkActivityLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BFA1C136E29000C7521 /* AFNetworkActivityLogger.m */; };
+		EA36A9A5C1F05B90C7D8834F /* libPods-myhumm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8972EE0BE285C456C0894956 /* libPods-myhumm.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21661BFA046EA132D795AF5B /* Pods-myhumm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myhumm.release.xcconfig"; path = "Pods/Target Support Files/Pods-myhumm/Pods-myhumm.release.xcconfig"; sourceTree = "<group>"; };
 		7BEE8BAB1C136C68000C7521 /* myhumm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myhumm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BEE8BAF1C136C68000C7521 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BEE8BB11C136C68000C7521 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +65,32 @@
 		7BEE8BCF1C136C69000C7521 /* myhummUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myhummUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BEE8BD31C136C69000C7521 /* myhummUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myhummUITests.m; sourceTree = "<group>"; };
 		7BEE8BD51C136C69000C7521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BEE8BE11C136E29000C7521 /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
+		7BEE8BE21C136E29000C7521 /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
+		7BEE8BE31C136E29000C7521 /* LoginInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginInfo.h; sourceTree = "<group>"; };
+		7BEE8BE41C136E29000C7521 /* LoginInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginInfo.m; sourceTree = "<group>"; };
+		7BEE8BE51C136E29000C7521 /* Playlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playlist.h; sourceTree = "<group>"; };
+		7BEE8BE61C136E29000C7521 /* Playlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Playlist.m; sourceTree = "<group>"; };
+		7BEE8BE71C136E29000C7521 /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
+		7BEE8BE81C136E29000C7521 /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
+		7BEE8BE91C136E29000C7521 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		7BEE8BEA1C136E29000C7521 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		7BEE8BEC1C136E29000C7521 /* ArtistsAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistsAPI.h; sourceTree = "<group>"; };
+		7BEE8BED1C136E29000C7521 /* ArtistsAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistsAPI.m; sourceTree = "<group>"; };
+		7BEE8BEE1C136E29000C7521 /* OthersAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OthersAPI.h; sourceTree = "<group>"; };
+		7BEE8BEF1C136E29000C7521 /* OthersAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OthersAPI.m; sourceTree = "<group>"; };
+		7BEE8BF01C136E29000C7521 /* PlaylistsAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistsAPI.h; sourceTree = "<group>"; };
+		7BEE8BF11C136E29000C7521 /* PlaylistsAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistsAPI.m; sourceTree = "<group>"; };
+		7BEE8BF21C136E29000C7521 /* SongsAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongsAPI.h; sourceTree = "<group>"; };
+		7BEE8BF31C136E29000C7521 /* SongsAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongsAPI.m; sourceTree = "<group>"; };
+		7BEE8BF41C136E29000C7521 /* UserAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAPI.h; sourceTree = "<group>"; };
+		7BEE8BF51C136E29000C7521 /* UserAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAPI.m; sourceTree = "<group>"; };
+		7BEE8BF71C136E29000C7521 /* HummAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HummAPI.h; sourceTree = "<group>"; };
+		7BEE8BF81C136E29000C7521 /* HummAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HummAPI.m; sourceTree = "<group>"; };
+		7BEE8BF91C136E29000C7521 /* AFNetworkActivityLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityLogger.h; sourceTree = "<group>"; };
+		7BEE8BFA1C136E29000C7521 /* AFNetworkActivityLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityLogger.m; sourceTree = "<group>"; };
+		8972EE0BE285C456C0894956 /* libPods-myhumm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myhumm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		927F1D0A3E548D6CEE8DA98E /* Pods-myhumm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myhumm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myhumm/Pods-myhumm.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA36A9A5C1F05B90C7D8834F /* libPods-myhumm.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +119,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18354FF7A7DE7DB6332BDA4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				927F1D0A3E548D6CEE8DA98E /* Pods-myhumm.debug.xcconfig */,
+				21661BFA046EA132D795AF5B /* Pods-myhumm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4DF402D3C063D0A24231D01B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8972EE0BE285C456C0894956 /* libPods-myhumm.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7BEE8BA21C136C68000C7521 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +143,8 @@
 				7BEE8BC71C136C69000C7521 /* myhummTests */,
 				7BEE8BD21C136C69000C7521 /* myhummUITests */,
 				7BEE8BAC1C136C68000C7521 /* Products */,
+				18354FF7A7DE7DB6332BDA4A /* Pods */,
+				4DF402D3C063D0A24231D01B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +161,7 @@
 		7BEE8BAD1C136C68000C7521 /* myhumm */ = {
 			isa = PBXGroup;
 			children = (
+				7BEE8BFB1C136E29000C7521 /* myhumm-ios-sdk */,
 				7BEE8BB11C136C68000C7521 /* AppDelegate.h */,
 				7BEE8BB21C136C68000C7521 /* AppDelegate.m */,
 				7BEE8BB41C136C68000C7521 /* ViewController.h */,
@@ -140,6 +201,55 @@
 			path = myhummUITests;
 			sourceTree = "<group>";
 		};
+		7BEE8BEB1C136E29000C7521 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7BEE8BE11C136E29000C7521 /* Artist.h */,
+				7BEE8BE21C136E29000C7521 /* Artist.m */,
+				7BEE8BE31C136E29000C7521 /* LoginInfo.h */,
+				7BEE8BE41C136E29000C7521 /* LoginInfo.m */,
+				7BEE8BE51C136E29000C7521 /* Playlist.h */,
+				7BEE8BE61C136E29000C7521 /* Playlist.m */,
+				7BEE8BE71C136E29000C7521 /* Song.h */,
+				7BEE8BE81C136E29000C7521 /* Song.m */,
+				7BEE8BE91C136E29000C7521 /* User.h */,
+				7BEE8BEA1C136E29000C7521 /* User.m */,
+			);
+			name = Model;
+			path = API/Model;
+			sourceTree = "<group>";
+		};
+		7BEE8BF61C136E29000C7521 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7BEE8BEC1C136E29000C7521 /* ArtistsAPI.h */,
+				7BEE8BED1C136E29000C7521 /* ArtistsAPI.m */,
+				7BEE8BEE1C136E29000C7521 /* OthersAPI.h */,
+				7BEE8BEF1C136E29000C7521 /* OthersAPI.m */,
+				7BEE8BF01C136E29000C7521 /* PlaylistsAPI.h */,
+				7BEE8BF11C136E29000C7521 /* PlaylistsAPI.m */,
+				7BEE8BF21C136E29000C7521 /* SongsAPI.h */,
+				7BEE8BF31C136E29000C7521 /* SongsAPI.m */,
+				7BEE8BF41C136E29000C7521 /* UserAPI.h */,
+				7BEE8BF51C136E29000C7521 /* UserAPI.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		7BEE8BFB1C136E29000C7521 /* myhumm-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				7BEE8BEB1C136E29000C7521 /* Model */,
+				7BEE8BF61C136E29000C7521 /* API */,
+				7BEE8BF71C136E29000C7521 /* HummAPI.h */,
+				7BEE8BF81C136E29000C7521 /* HummAPI.m */,
+				7BEE8BF91C136E29000C7521 /* AFNetworkActivityLogger.h */,
+				7BEE8BFA1C136E29000C7521 /* AFNetworkActivityLogger.m */,
+			);
+			name = "myhumm-ios-sdk";
+			path = "../../humm-ios-sdk/wrapper";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +257,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BEE8BD81C136C69000C7521 /* Build configuration list for PBXNativeTarget "myhumm" */;
 			buildPhases = (
+				A55F6038C517283F598EFE52 /* Check Pods Manifest.lock */,
 				7BEE8BA71C136C68000C7521 /* Sources */,
 				7BEE8BA81C136C68000C7521 /* Frameworks */,
 				7BEE8BA91C136C68000C7521 /* Resources */,
+				D7B1AE886A1FD1BCB3C773FB /* Embed Pods Frameworks */,
+				1CC76C60B11306ACDF830134 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,14 +381,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CC76C60B11306ACDF830134 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myhumm/Pods-myhumm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A55F6038C517283F598EFE52 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D7B1AE886A1FD1BCB3C773FB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myhumm/Pods-myhumm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7BEE8BA71C136C68000C7521 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BEE8C001C136E29000C7521 /* User.m in Sources */,
+				7BEE8BFF1C136E29000C7521 /* Song.m in Sources */,
 				7BEE8BB61C136C68000C7521 /* ViewController.m in Sources */,
+				7BEE8BFE1C136E29000C7521 /* Playlist.m in Sources */,
+				7BEE8C011C136E29000C7521 /* ArtistsAPI.m in Sources */,
 				7BEE8BB31C136C68000C7521 /* AppDelegate.m in Sources */,
+				7BEE8BFC1C136E29000C7521 /* Artist.m in Sources */,
+				7BEE8C051C136E29000C7521 /* UserAPI.m in Sources */,
+				7BEE8BFD1C136E29000C7521 /* LoginInfo.m in Sources */,
 				7BEE8BB01C136C68000C7521 /* main.m in Sources */,
+				7BEE8C071C136E29000C7521 /* AFNetworkActivityLogger.m in Sources */,
+				7BEE8C041C136E29000C7521 /* SongsAPI.m in Sources */,
+				7BEE8C031C136E29000C7521 /* PlaylistsAPI.m in Sources */,
+				7BEE8C021C136E29000C7521 /* OthersAPI.m in Sources */,
+				7BEE8C061C136E29000C7521 /* HummAPI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +587,7 @@
 		};
 		7BEE8BD91C136C69000C7521 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 927F1D0A3E548D6CEE8DA98E /* Pods-myhumm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = myhumm/Info.plist;
@@ -425,6 +599,7 @@
 		};
 		7BEE8BDA1C136C69000C7521 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21661BFA046EA132D795AF5B /* Pods-myhumm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = myhumm/Info.plist;
@@ -501,6 +676,7 @@
 				7BEE8BDA1C136C69000C7521 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BEE8BDB1C136C69000C7521 /* Build configuration list for PBXNativeTarget "myhummTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +685,7 @@
 				7BEE8BDD1C136C69000C7521 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7BEE8BDE1C136C69000C7521 /* Build configuration list for PBXNativeTarget "myhummUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +694,7 @@
 				7BEE8BE01C136C69000C7521 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
