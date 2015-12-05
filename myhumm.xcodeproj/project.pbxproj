@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B68D3511C138E7F00B9CA58 /* ScheduleService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B68D3501C138E7F00B9CA58 /* ScheduleService.m */; };
 		7BEE8BB01C136C68000C7521 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BAF1C136C68000C7521 /* main.m */; };
 		7BEE8BB31C136C68000C7521 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BB21C136C68000C7521 /* AppDelegate.m */; };
 		7BEE8BB61C136C68000C7521 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BB51C136C68000C7521 /* ViewController.m */; };
@@ -49,6 +50,8 @@
 
 /* Begin PBXFileReference section */
 		21661BFA046EA132D795AF5B /* Pods-myhumm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myhumm.release.xcconfig"; path = "Pods/Target Support Files/Pods-myhumm/Pods-myhumm.release.xcconfig"; sourceTree = "<group>"; };
+		7B68D34F1C138E7F00B9CA58 /* ScheduleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScheduleService.h; path = myhumm/ScheduleService.h; sourceTree = "<group>"; };
+		7B68D3501C138E7F00B9CA58 /* ScheduleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduleService.m; path = myhumm/ScheduleService.m; sourceTree = "<group>"; };
 		7BEE8BAB1C136C68000C7521 /* myhumm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myhumm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BEE8BAF1C136C68000C7521 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BEE8BB11C136C68000C7521 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -139,6 +142,8 @@
 		7BEE8BA21C136C68000C7521 = {
 			isa = PBXGroup;
 			children = (
+				7B68D34F1C138E7F00B9CA58 /* ScheduleService.h */,
+				7B68D3501C138E7F00B9CA58 /* ScheduleService.m */,
 				7BEE8BAD1C136C68000C7521 /* myhumm */,
 				7BEE8BC71C136C69000C7521 /* myhummTests */,
 				7BEE8BD21C136C69000C7521 /* myhummUITests */,
@@ -444,6 +449,7 @@
 				7BEE8C051C136E29000C7521 /* UserAPI.m in Sources */,
 				7BEE8BFD1C136E29000C7521 /* LoginInfo.m in Sources */,
 				7BEE8BB01C136C68000C7521 /* main.m in Sources */,
+				7B68D3511C138E7F00B9CA58 /* ScheduleService.m in Sources */,
 				7BEE8C071C136E29000C7521 /* AFNetworkActivityLogger.m in Sources */,
 				7BEE8C041C136E29000C7521 /* SongsAPI.m in Sources */,
 				7BEE8C031C136E29000C7521 /* PlaylistsAPI.m in Sources */,

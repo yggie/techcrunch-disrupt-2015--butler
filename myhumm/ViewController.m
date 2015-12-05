@@ -10,9 +10,15 @@
 #import "HummAPI.h"
 #import "PlaylistsAPI.h"
 #import "Song.h"
+#import "ScheduleService.h"
 @interface ViewController ()
 
 @property (nonatomic) HummAPI *humm;
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property NSArray *myArray;
+@property ScheduleService *service;
 
 @end
 
@@ -24,6 +30,10 @@
     self.humm = [HummAPI sharedManager];
     // Do any additional setup after loading the view, typically from a nib.
     [self authenticateHumm];
+    
+    self.service = [ScheduleService new];
+    
+    self.myArray = [self.service someArray];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,16 +66,35 @@
     }];
 }
 
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//
-//
-//}
-//
-//-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-//{
-//
-//    
-//}
+#pragma mark DELEGATE
+
+#pragma mark DATA SOURCE
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.myArray count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell =[self.tableView dequeueReusableCellWithIdentifier:@"some_cell"];
+    
+    UILabel *label = (UILabel*)[cell viewWithTag:1];
+    label.text = [[self.myArray objectAtIndex:indexPath.row] stringValue];
+    
+    return cell;
+}
+
+#pragma mark SHAKE GESTURES
+
+-(BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (motion == UIEventSubtypeMotionShake) {
+        self.myArray = [self.service someArray];
+        [self.tableView reloadData];
+    }
+}
+
 
 @end
