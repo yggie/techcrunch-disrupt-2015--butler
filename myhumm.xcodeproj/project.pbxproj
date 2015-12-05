@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BEE8BB01C136C68000C7521 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BAF1C136C68000C7521 /* main.m */; };
+		7BEE8BB31C136C68000C7521 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BB21C136C68000C7521 /* AppDelegate.m */; };
+		7BEE8BB61C136C68000C7521 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BB51C136C68000C7521 /* ViewController.m */; };
+		7BEE8BB91C136C68000C7521 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BEE8BB71C136C68000C7521 /* Main.storyboard */; };
+		7BEE8BBB1C136C68000C7521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BEE8BBA1C136C68000C7521 /* Assets.xcassets */; };
+		7BEE8BBE1C136C68000C7521 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BEE8BBC1C136C68000C7521 /* LaunchScreen.storyboard */; };
+		7BEE8BC91C136C69000C7521 /* myhummTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BC81C136C69000C7521 /* myhummTests.m */; };
+		7BEE8BD41C136C69000C7521 /* myhummUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BD31C136C69000C7521 /* myhummUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BEE8BC51C136C69000C7521 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BEE8BA31C136C68000C7521 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BEE8BAA1C136C68000C7521;
+			remoteInfo = myhumm;
+		};
+		7BEE8BD01C136C69000C7521 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BEE8BA31C136C68000C7521 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BEE8BAA1C136C68000C7521;
+			remoteInfo = myhumm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7BEE8BAB1C136C68000C7521 /* myhumm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myhumm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BEE8BAF1C136C68000C7521 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7BEE8BB11C136C68000C7521 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7BEE8BB21C136C68000C7521 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7BEE8BB41C136C68000C7521 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7BEE8BB51C136C68000C7521 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7BEE8BB81C136C68000C7521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BEE8BBA1C136C68000C7521 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BEE8BBD1C136C68000C7521 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7BEE8BBF1C136C68000C7521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BEE8BC41C136C69000C7521 /* myhummTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myhummTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BEE8BC81C136C69000C7521 /* myhummTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myhummTests.m; sourceTree = "<group>"; };
+		7BEE8BCA1C136C69000C7521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BEE8BCF1C136C69000C7521 /* myhummUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myhummUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BEE8BD31C136C69000C7521 /* myhummUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myhummUITests.m; sourceTree = "<group>"; };
+		7BEE8BD51C136C69000C7521 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BEE8BA81C136C68000C7521 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BEE8BC11C136C69000C7521 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BEE8BCC1C136C69000C7521 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7BEE8BA21C136C68000C7521 = {
+			isa = PBXGroup;
+			children = (
+				7BEE8BAD1C136C68000C7521 /* myhumm */,
+				7BEE8BC71C136C69000C7521 /* myhummTests */,
+				7BEE8BD21C136C69000C7521 /* myhummUITests */,
+				7BEE8BAC1C136C68000C7521 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BEE8BAC1C136C68000C7521 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BEE8BAB1C136C68000C7521 /* myhumm.app */,
+				7BEE8BC41C136C69000C7521 /* myhummTests.xctest */,
+				7BEE8BCF1C136C69000C7521 /* myhummUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BEE8BAD1C136C68000C7521 /* myhumm */ = {
+			isa = PBXGroup;
+			children = (
+				7BEE8BB11C136C68000C7521 /* AppDelegate.h */,
+				7BEE8BB21C136C68000C7521 /* AppDelegate.m */,
+				7BEE8BB41C136C68000C7521 /* ViewController.h */,
+				7BEE8BB51C136C68000C7521 /* ViewController.m */,
+				7BEE8BB71C136C68000C7521 /* Main.storyboard */,
+				7BEE8BBA1C136C68000C7521 /* Assets.xcassets */,
+				7BEE8BBC1C136C68000C7521 /* LaunchScreen.storyboard */,
+				7BEE8BBF1C136C68000C7521 /* Info.plist */,
+				7BEE8BAE1C136C68000C7521 /* Supporting Files */,
+			);
+			path = myhumm;
+			sourceTree = "<group>";
+		};
+		7BEE8BAE1C136C68000C7521 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BEE8BAF1C136C68000C7521 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7BEE8BC71C136C69000C7521 /* myhummTests */ = {
+			isa = PBXGroup;
+			children = (
+				7BEE8BC81C136C69000C7521 /* myhummTests.m */,
+				7BEE8BCA1C136C69000C7521 /* Info.plist */,
+			);
+			path = myhummTests;
+			sourceTree = "<group>";
+		};
+		7BEE8BD21C136C69000C7521 /* myhummUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7BEE8BD31C136C69000C7521 /* myhummUITests.m */,
+				7BEE8BD51C136C69000C7521 /* Info.plist */,
+			);
+			path = myhummUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BEE8BAA1C136C68000C7521 /* myhumm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BEE8BD81C136C69000C7521 /* Build configuration list for PBXNativeTarget "myhumm" */;
+			buildPhases = (
+				7BEE8BA71C136C68000C7521 /* Sources */,
+				7BEE8BA81C136C68000C7521 /* Frameworks */,
+				7BEE8BA91C136C68000C7521 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myhumm;
+			productName = myhumm;
+			productReference = 7BEE8BAB1C136C68000C7521 /* myhumm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BEE8BC31C136C69000C7521 /* myhummTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BEE8BDB1C136C69000C7521 /* Build configuration list for PBXNativeTarget "myhummTests" */;
+			buildPhases = (
+				7BEE8BC01C136C69000C7521 /* Sources */,
+				7BEE8BC11C136C69000C7521 /* Frameworks */,
+				7BEE8BC21C136C69000C7521 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BEE8BC61C136C69000C7521 /* PBXTargetDependency */,
+			);
+			name = myhummTests;
+			productName = myhummTests;
+			productReference = 7BEE8BC41C136C69000C7521 /* myhummTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7BEE8BCE1C136C69000C7521 /* myhummUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BEE8BDE1C136C69000C7521 /* Build configuration list for PBXNativeTarget "myhummUITests" */;
+			buildPhases = (
+				7BEE8BCB1C136C69000C7521 /* Sources */,
+				7BEE8BCC1C136C69000C7521 /* Frameworks */,
+				7BEE8BCD1C136C69000C7521 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BEE8BD11C136C69000C7521 /* PBXTargetDependency */,
+			);
+			name = myhummUITests;
+			productName = myhummUITests;
+			productReference = 7BEE8BCF1C136C69000C7521 /* myhummUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BEE8BA31C136C68000C7521 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Kankemwa Ishaku";
+				TargetAttributes = {
+					7BEE8BAA1C136C68000C7521 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 67MCGJC5M4;
+					};
+					7BEE8BC31C136C69000C7521 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 67MCGJC5M4;
+						TestTargetID = 7BEE8BAA1C136C68000C7521;
+					};
+					7BEE8BCE1C136C69000C7521 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 67MCGJC5M4;
+						TestTargetID = 7BEE8BAA1C136C68000C7521;
+					};
+				};
+			};
+			buildConfigurationList = 7BEE8BA61C136C68000C7521 /* Build configuration list for PBXProject "myhumm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BEE8BA21C136C68000C7521;
+			productRefGroup = 7BEE8BAC1C136C68000C7521 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BEE8BAA1C136C68000C7521 /* myhumm */,
+				7BEE8BC31C136C69000C7521 /* myhummTests */,
+				7BEE8BCE1C136C69000C7521 /* myhummUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BEE8BA91C136C68000C7521 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BEE8BBE1C136C68000C7521 /* LaunchScreen.storyboard in Resources */,
+				7BEE8BBB1C136C68000C7521 /* Assets.xcassets in Resources */,
+				7BEE8BB91C136C68000C7521 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BEE8BC21C136C69000C7521 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BEE8BCD1C136C69000C7521 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BEE8BA71C136C68000C7521 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BEE8BB61C136C68000C7521 /* ViewController.m in Sources */,
+				7BEE8BB31C136C68000C7521 /* AppDelegate.m in Sources */,
+				7BEE8BB01C136C68000C7521 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BEE8BC01C136C69000C7521 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BEE8BC91C136C69000C7521 /* myhummTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BEE8BCB1C136C69000C7521 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BEE8BD41C136C69000C7521 /* myhummUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BEE8BC61C136C69000C7521 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BEE8BAA1C136C68000C7521 /* myhumm */;
+			targetProxy = 7BEE8BC51C136C69000C7521 /* PBXContainerItemProxy */;
+		};
+		7BEE8BD11C136C69000C7521 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BEE8BAA1C136C68000C7521 /* myhumm */;
+			targetProxy = 7BEE8BD01C136C69000C7521 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7BEE8BB71C136C68000C7521 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BEE8BB81C136C68000C7521 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7BEE8BBC1C136C68000C7521 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BEE8BBD1C136C68000C7521 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BEE8BD61C136C69000C7521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BEE8BD71C136C69000C7521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BEE8BD91C136C69000C7521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = myhumm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.myhumm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7BEE8BDA1C136C69000C7521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = myhumm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.myhumm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7BEE8BDC1C136C69000C7521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = myhummTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.myhummTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/myhumm.app/myhumm";
+			};
+			name = Debug;
+		};
+		7BEE8BDD1C136C69000C7521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = myhummTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.myhummTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/myhumm.app/myhumm";
+			};
+			name = Release;
+		};
+		7BEE8BDF1C136C69000C7521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = myhummUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.myhummUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = myhumm;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7BEE8BE01C136C69000C7521 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = myhummUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.myhummUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = myhumm;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BEE8BA61C136C68000C7521 /* Build configuration list for PBXProject "myhumm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BEE8BD61C136C69000C7521 /* Debug */,
+				7BEE8BD71C136C69000C7521 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BEE8BD81C136C69000C7521 /* Build configuration list for PBXNativeTarget "myhumm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BEE8BD91C136C69000C7521 /* Debug */,
+				7BEE8BDA1C136C69000C7521 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7BEE8BDB1C136C69000C7521 /* Build configuration list for PBXNativeTarget "myhummTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BEE8BDC1C136C69000C7521 /* Debug */,
+				7BEE8BDD1C136C69000C7521 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7BEE8BDE1C136C69000C7521 /* Build configuration list for PBXNativeTarget "myhummUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BEE8BDF1C136C69000C7521 /* Debug */,
+				7BEE8BE01C136C69000C7521 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BEE8BA31C136C68000C7521 /* Project object */;
+}
