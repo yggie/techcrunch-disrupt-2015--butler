@@ -10,11 +10,12 @@
 
 @implementation Food
 
-- (id)name:(NSString *)name : (NSString *)estimated_delivery : (NSString *)image : (NSInteger)rating{
+- (id)name:(NSString *)name : (NSString *)estimated_delivery : (NSString *)image : (NSInteger)rating :(NSString*)restaurant {
     self.name = name;
     self.estimated_delivery = estimated_delivery;
     self.rating = rating;
     self.image = [UIImage imageNamed:image];
+    self.restaurant = restaurant;
     return self;
 }
 

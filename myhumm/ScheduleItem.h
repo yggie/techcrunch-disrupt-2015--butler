@@ -11,12 +11,12 @@
 
 @interface ScheduleItem : NSObject
 
-@property NSDate *startTime;
-@property NSDate *endTime;
+@property NSString *timeInfoText;
+@property NSString *subtitle;
 @property UIImage *image;
 
 @property NSObject *info;
 
-- (id)initWithInfo:(NSDate*)startTime :(NSDate*)endTime :(NSObject*)info :(UIImage*)image;
+- (id)initWithInfo:(NSString*)startTime :(NSString*)endTime :(NSObject*)info :(UIImage*)image;
 
 @end

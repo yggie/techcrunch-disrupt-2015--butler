@@ -14,7 +14,16 @@
 #import "ScheduleItem.h"
 #import "Sky.h"
 #import "Food.h"
+#import "CineworldFilm.h"
 
+@interface CineworldApiWrapper : JSONModel
+
+@property (strong, nonatomic) NSArray<CineworldFilm*> *films;
+
+@end
+
+@implementation CineworldApiWrapper
+@end
 
 @implementation ScheduleService {
     HummAPI *humm;
@@ -45,12 +54,12 @@
     
     
     NSMutableArray<Food*> *foodList = [NSMutableArray new];
-    [foodList addObject:[[Food new] name:@"Ham & Mushroom Pizza" :@"30 minutes" :@"ham.jpg" :4 ]];
-    [foodList addObject:[[Food new] name:@"Lamb Burrito" :@"15 minutes" :@"burrito.jpg" :5 ]];
-    [foodList addObject:[[Food new] name:@"Tandoori Chicken" :@"3 minutes" :@"chicken.jpg" :3 ]];
-    [foodList addObject:[[Food new] name:@"Pumpkin Ravioli" :@"60 minutes" :@"pumpkin.jpg" :2 ]];
-    [foodList addObject:[[Food new] name:@"Fresh Crab Spaghetti" :@"7 minutes" :@"pasta.jpg" :1 ]];
-    [foodList addObject:[[Food new] name:@"Railway Beef Rice" :@"5 minutes" :@"rice.jpg" :4 ]];
+    [foodList addObject:[[Food new] name:@"Ham & Mushroom Pizza" :@"30 minutes" :@"ham.jpg" :4 :@"Dominos"]];
+    [foodList addObject:[[Food new] name:@"Lamb Burrito" :@"15 minutes" :@"burrito.jpg" :5 :@"Maximum Burritos"]];
+    [foodList addObject:[[Food new] name:@"Tandoori Chicken" :@"3 minutes" :@"chicken.jpg" :3 :@"Cheeky Indian"]];
+    [foodList addObject:[[Food new] name:@"Pumpkin Ravioli" :@"60 minutes" :@"pumpkin.jpg" :2 :@"Maxwell’s Cafe"]];
+    [foodList addObject:[[Food new] name:@"Fresh Crab Spaghetti" :@"7 minutes" :@"pasta.jpg" :1 :@"Seafood Paradise"]];
+    [foodList addObject:[[Food new] name:@"Railway Beef Rice" :@"5 minutes" :@"rice.jpg" :4 :@"Texas Original"]];
     
     
     self->movies = movieList;
@@ -63,32 +72,51 @@
     [self loadPlaylist:^(NSArray<Song*>* songs) {
         NSMutableArray *array = [NSMutableArray new];
         
-        NSLog(@"Starting to load SONGS");
+        Sky *skyInfo = [self pickSkyProgram];
+        NSString *timeInfoText = @"starts at 23:00";
+        NSString *subtitle = skyInfo.genre;
+        
+        ScheduleItem *skyItem = [[ScheduleItem alloc] initWithInfo:timeInfoText :subtitle :skyInfo :skyInfo.image];
+        
+        [array addObject:skyItem];
+        
+        Food *foodInfo = [self pickFood];
+        NSString *foodTimeInfoText = @"30 mins";
+        NSString *foodSubtitle = foodInfo.restaurant;
+        
+        ScheduleItem *foodItem = [[ScheduleItem alloc] initWithInfo:foodTimeInfoText :foodSubtitle :foodInfo :foodInfo.image];
+        
+        [array addObject:foodItem];
         
         for (Song *song in songs) {
-            NSDate *startDate = [self dateAt:20 :0];
-            NSDate *endDate = [self dateAt:21 :0];
+            NSString *songTimeInfoText = @"2 hrs";
+            NSString *songSubtitle = [song.genres componentsJoinedByString:@", "];
             
             NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/%@", @"http://i.ytimg.com/vi", [song.foreign_ids objectForKey:@"youtube"], @"mqdefault.jpg"]];
             NSData *data = [NSData dataWithContentsOfURL:url];
             
             UIImage *image = [[UIImage alloc] initWithData:data];
             
-            ScheduleItem *item = [[ScheduleItem alloc] initWithInfo:startDate :endDate :song :image];
+            ScheduleItem *item = [[ScheduleItem alloc] initWithInfo:songTimeInfoText :songSubtitle :song :image];
+            
             [array addObject:item];
         }
         
-        NSLog(@"Ended loading SONGS");
+        NSString *json = [self getDataFrom:@"http://www2.cineworld.co.uk/api/quickbook/films?key=tQV@xYvf&cinema=23&date=20151208&full=true"];
+        NSError *error = nil;
         
-        Sky *skyInfo = [self pickSkyProgram];
-        Food *foodInfo = [self pickFood];
-        NSLog(@"food info.....%@" , foodInfo.name);
-        NSDate *skyStartDate = [self dateAt:22 :0];
-        NSDate *skyEndDate = [self dateAt:23 :0];
+        NSLog(json);
         
-        ScheduleItem *skyItem = [[ScheduleItem alloc] initWithInfo:skyStartDate :skyEndDate :skyInfo :skyInfo.image];
+        CineworldApiWrapper *wrapper = [[CineworldApiWrapper alloc] initWithString:json error:&error];
         
-        [array addObject:skyItem];
+        NSDictionary *film = [wrapper.films objectAtIndex:arc4random_uniform([wrapper.films count])];
+        
+        NSData *filmImageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:[film objectForKey:@"still_url"]]];
+        UIImage *filmImage = [[UIImage alloc] initWithData:filmImageData];
+        
+        ScheduleItem *filmItem = [[ScheduleItem alloc] initWithInfo:@"Now showing" :@"Cineworld" :film :filmImage];
+        
+        [array addObject:filmItem];
         
         callback(array);
     }];
@@ -152,6 +180,24 @@
             NSLog(@"ERROR:", error);
         }];
     }];
+}
+
+- (NSString *) getDataFrom:(NSString *)url{
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    [request setHTTPMethod:@"GET"];
+    [request setURL:[NSURL URLWithString:url]];
+    
+    NSError *error = [[NSError alloc] init];
+    NSHTTPURLResponse *responseCode = nil;
+    
+    NSData *oResponseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&responseCode error:&error];
+    
+    if([responseCode statusCode] != 200){
+        NSLog(@"Error getting %@, HTTP status code %i", url, [responseCode statusCode]);
+        return nil;
+    }
+    
+    return [[NSString alloc] initWithData:oResponseData encoding:NSUTF8StringEncoding];
 }
 
 @end

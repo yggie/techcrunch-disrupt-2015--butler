@@ -46,6 +46,11 @@
 		7BEE8C051C136E29000C7521 /* UserAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BF51C136E29000C7521 /* UserAPI.m */; };
 		7BEE8C061C136E29000C7521 /* HummAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BF81C136E29000C7521 /* HummAPI.m */; };
 		7BEE8C071C136E29000C7521 /* AFNetworkActivityLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BFA1C136E29000C7521 /* AFNetworkActivityLogger.m */; };
+		93445B321C14152800A3E5D6 /* foodft.png in Resources */ = {isa = PBXBuildFile; fileRef = 93445B2F1C14152800A3E5D6 /* foodft.png */; };
+		93445B331C14152800A3E5D6 /* movieft.png in Resources */ = {isa = PBXBuildFile; fileRef = 93445B301C14152800A3E5D6 /* movieft.png */; };
+		93445B341C14152800A3E5D6 /* musicft.png in Resources */ = {isa = PBXBuildFile; fileRef = 93445B311C14152800A3E5D6 /* musicft.png */; };
+		93445B371C14196300A3E5D6 /* CineworldFilm.m in Sources */ = {isa = PBXBuildFile; fileRef = 93445B361C14196300A3E5D6 /* CineworldFilm.m */; };
+		93445B391C142A7100A3E5D6 /* play_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 93445B381C142A7100A3E5D6 /* play_button.png */; };
 		93BA72BA1C1392D300AE6DA2 /* ScheduleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BA72B91C1392D300AE6DA2 /* ScheduleItem.m */; };
 		93BA72BD1C139C6700AE6DA2 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BA72BC1C139C6700AE6DA2 /* RootViewController.m */; };
 		93BA72C41C13D62200AE6DA2 /* shake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 93BA72C31C13D62200AE6DA2 /* shake.jpg */; };
@@ -140,6 +145,12 @@
 		7BEE8BFA1C136E29000C7521 /* AFNetworkActivityLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityLogger.m; sourceTree = "<group>"; };
 		8972EE0BE285C456C0894956 /* libPods-myhumm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myhumm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		927F1D0A3E548D6CEE8DA98E /* Pods-myhumm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myhumm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myhumm/Pods-myhumm.debug.xcconfig"; sourceTree = "<group>"; };
+		93445B2F1C14152800A3E5D6 /* foodft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foodft.png; sourceTree = "<group>"; };
+		93445B301C14152800A3E5D6 /* movieft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movieft.png; sourceTree = "<group>"; };
+		93445B311C14152800A3E5D6 /* musicft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = musicft.png; sourceTree = "<group>"; };
+		93445B351C14196300A3E5D6 /* CineworldFilm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineworldFilm.h; sourceTree = "<group>"; };
+		93445B361C14196300A3E5D6 /* CineworldFilm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineworldFilm.m; sourceTree = "<group>"; };
+		93445B381C142A7100A3E5D6 /* play_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_button.png; sourceTree = "<group>"; };
 		93BA72B81C1392D300AE6DA2 /* ScheduleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleItem.h; sourceTree = "<group>"; };
 		93BA72B91C1392D300AE6DA2 /* ScheduleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleItem.m; sourceTree = "<group>"; };
 		93BA72BB1C139C6700AE6DA2 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
@@ -201,6 +212,10 @@
 		7B68D3551C13A87C00B9CA58 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				93445B381C142A7100A3E5D6 /* play_button.png */,
+				93445B2F1C14152800A3E5D6 /* foodft.png */,
+				93445B301C14152800A3E5D6 /* movieft.png */,
+				93445B311C14152800A3E5D6 /* musicft.png */,
 				93BA72CB1C13E8B400AE6DA2 /* butlr foot.png */,
 				93BA72CC1C13E8B400AE6DA2 /* Clock 2@2x.png */,
 				93BA72C51C13E8AB00AE6DA2 /* 3star.png */,
@@ -367,6 +382,8 @@
 				7B68D36A1C13C0EB00B9CA58 /* Food.h */,
 				7B68D36B1C13C0EB00B9CA58 /* Food.m */,
 				7B68D3531C139B4A00B9CA58 /* Sky.m */,
+				93445B351C14196300A3E5D6 /* CineworldFilm.h */,
+				93445B361C14196300A3E5D6 /* CineworldFilm.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -487,13 +504,16 @@
 				7B68D3711C13C6CC00B9CA58 /* burrito.jpg in Resources */,
 				7B68D35D1C13AA8700B9CA58 /* 4.jpeg in Resources */,
 				7B68D35B1C13AA6900B9CA58 /* 3.jpeg in Resources */,
+				93445B321C14152800A3E5D6 /* foodft.png in Resources */,
 				93BA72CE1C13E8B400AE6DA2 /* Clock 2@2x.png in Resources */,
 				7B68D3671C13AAF700B9CA58 /* 9.jpeg in Resources */,
 				7B68D3631C13AAD100B9CA58 /* 7.jpeg in Resources */,
 				7B68D3751C13C76400B9CA58 /* pumpkin.jpg in Resources */,
 				93BA72CA1C13E8AB00AE6DA2 /* 5star.png in Resources */,
+				93445B341C14152800A3E5D6 /* musicft.png in Resources */,
 				7BEE8BBE1C136C68000C7521 /* LaunchScreen.storyboard in Resources */,
 				7BEE8BBB1C136C68000C7521 /* Assets.xcassets in Resources */,
+				93445B331C14152800A3E5D6 /* movieft.png in Resources */,
 				7B68D3691C13AB5800B9CA58 /* 10.jpeg in Resources */,
 				93BA72C91C13E8AB00AE6DA2 /* 4star.png in Resources */,
 				7BEE8BB91C136C68000C7521 /* Main.storyboard in Resources */,
@@ -502,6 +522,7 @@
 				7B68D3571C13A9E700B9CA58 /* 1.jpeg in Resources */,
 				7B68D3731C13C71E00B9CA58 /* chicken.jpg in Resources */,
 				7B68D3791C13C7FD00B9CA58 /* rice.jpg in Resources */,
+				93445B391C142A7100A3E5D6 /* play_button.png in Resources */,
 				7B68D3771C13C7B200B9CA58 /* pasta.jpg in Resources */,
 				7B68D3611C13AAB500B9CA58 /* 6.jpeg in Resources */,
 				7B68D3591C13AA4200B9CA58 /* 2.jpeg in Resources */,
@@ -584,6 +605,7 @@
 				7BEE8C011C136E29000C7521 /* ArtistsAPI.m in Sources */,
 				7B68D36C1C13C0EB00B9CA58 /* Food.m in Sources */,
 				7BEE8BB31C136C68000C7521 /* AppDelegate.m in Sources */,
+				93445B371C14196300A3E5D6 /* CineworldFilm.m in Sources */,
 				7BEE8BFC1C136E29000C7521 /* Artist.m in Sources */,
 				93BA72BA1C1392D300AE6DA2 /* ScheduleItem.m in Sources */,
 				7BEE8C051C136E29000C7521 /* UserAPI.m in Sources */,

@@ -12,9 +12,10 @@
 @interface Food : NSObject
 @property NSString *name;
 @property NSString *estimated_delivery;
+@property NSString *restaurant;
 @property UIImage *image;
 @property NSInteger rating;
 
-- (id)name:(NSString *)name : (NSString *)estimated_delivery : (NSString *)image : (NSInteger) rating;
+- (id)name:(NSString *)name : (NSString *)estimated_delivery : (NSString *)image : (NSInteger) rating :(NSString*)restaurant;
 
 @end
