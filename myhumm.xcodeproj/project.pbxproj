@@ -48,6 +48,12 @@
 		7BEE8C071C136E29000C7521 /* AFNetworkActivityLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE8BFA1C136E29000C7521 /* AFNetworkActivityLogger.m */; };
 		93BA72BA1C1392D300AE6DA2 /* ScheduleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BA72B91C1392D300AE6DA2 /* ScheduleItem.m */; };
 		93BA72BD1C139C6700AE6DA2 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BA72BC1C139C6700AE6DA2 /* RootViewController.m */; };
+		93BA72C41C13D62200AE6DA2 /* shake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 93BA72C31C13D62200AE6DA2 /* shake.jpg */; };
+		93BA72C81C13E8AB00AE6DA2 /* 3star.png in Resources */ = {isa = PBXBuildFile; fileRef = 93BA72C51C13E8AB00AE6DA2 /* 3star.png */; };
+		93BA72C91C13E8AB00AE6DA2 /* 4star.png in Resources */ = {isa = PBXBuildFile; fileRef = 93BA72C61C13E8AB00AE6DA2 /* 4star.png */; };
+		93BA72CA1C13E8AB00AE6DA2 /* 5star.png in Resources */ = {isa = PBXBuildFile; fileRef = 93BA72C71C13E8AB00AE6DA2 /* 5star.png */; };
+		93BA72CD1C13E8B400AE6DA2 /* butlr foot.png in Resources */ = {isa = PBXBuildFile; fileRef = 93BA72CB1C13E8B400AE6DA2 /* butlr foot.png */; };
+		93BA72CE1C13E8B400AE6DA2 /* Clock 2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93BA72CC1C13E8B400AE6DA2 /* Clock 2@2x.png */; };
 		EA36A9A5C1F05B90C7D8834F /* libPods-myhumm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8972EE0BE285C456C0894956 /* libPods-myhumm.a */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +144,15 @@
 		93BA72B91C1392D300AE6DA2 /* ScheduleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleItem.m; sourceTree = "<group>"; };
 		93BA72BB1C139C6700AE6DA2 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		93BA72BC1C139C6700AE6DA2 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		93BA72C01C13C3A400AE6DA2 /* Lato-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Medium.ttf"; sourceTree = "<group>"; };
+		93BA72C11C13C3CC00AE6DA2 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		93BA72C21C13C3EE00AE6DA2 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		93BA72C31C13D62200AE6DA2 /* shake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shake.jpg; sourceTree = "<group>"; };
+		93BA72C51C13E8AB00AE6DA2 /* 3star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3star.png; sourceTree = "<group>"; };
+		93BA72C61C13E8AB00AE6DA2 /* 4star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4star.png; sourceTree = "<group>"; };
+		93BA72C71C13E8AB00AE6DA2 /* 5star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5star.png; sourceTree = "<group>"; };
+		93BA72CB1C13E8B400AE6DA2 /* butlr foot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "butlr foot.png"; sourceTree = "<group>"; };
+		93BA72CC1C13E8B400AE6DA2 /* Clock 2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clock 2@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,10 +201,16 @@
 		7B68D3551C13A87C00B9CA58 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				93BA72CB1C13E8B400AE6DA2 /* butlr foot.png */,
+				93BA72CC1C13E8B400AE6DA2 /* Clock 2@2x.png */,
+				93BA72C51C13E8AB00AE6DA2 /* 3star.png */,
+				93BA72C61C13E8AB00AE6DA2 /* 4star.png */,
+				93BA72C71C13E8AB00AE6DA2 /* 5star.png */,
 				7B68D3681C13AB5800B9CA58 /* 10.jpeg */,
 				7B68D3661C13AAF700B9CA58 /* 9.jpeg */,
 				7B68D3641C13AAE500B9CA58 /* 8.jpeg */,
 				7B68D3621C13AAD100B9CA58 /* 7.jpeg */,
+				93BA72C31C13D62200AE6DA2 /* shake.jpg */,
 				7B68D3601C13AAB500B9CA58 /* 6.jpeg */,
 				7B68D35E1C13AA9C00B9CA58 /* 5.jpeg */,
 				7B68D35C1C13AA8700B9CA58 /* 4.jpeg */,
@@ -262,6 +283,9 @@
 		7BEE8BAE1C136C68000C7521 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				93BA72C21C13C3EE00AE6DA2 /* Raleway-Medium.ttf */,
+				93BA72C11C13C3CC00AE6DA2 /* Lato-Regular.ttf */,
+				93BA72C01C13C3A400AE6DA2 /* Lato-Medium.ttf */,
 				7BEE8BAF1C136C68000C7521 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -456,19 +480,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93BA72CD1C13E8B400AE6DA2 /* butlr foot.png in Resources */,
+				93BA72C81C13E8AB00AE6DA2 /* 3star.png in Resources */,
 				7B68D35F1C13AA9C00B9CA58 /* 5.jpeg in Resources */,
 				7B68D3651C13AAE500B9CA58 /* 8.jpeg in Resources */,
 				7B68D3711C13C6CC00B9CA58 /* burrito.jpg in Resources */,
 				7B68D35D1C13AA8700B9CA58 /* 4.jpeg in Resources */,
 				7B68D35B1C13AA6900B9CA58 /* 3.jpeg in Resources */,
+				93BA72CE1C13E8B400AE6DA2 /* Clock 2@2x.png in Resources */,
 				7B68D3671C13AAF700B9CA58 /* 9.jpeg in Resources */,
 				7B68D3631C13AAD100B9CA58 /* 7.jpeg in Resources */,
 				7B68D3751C13C76400B9CA58 /* pumpkin.jpg in Resources */,
+				93BA72CA1C13E8AB00AE6DA2 /* 5star.png in Resources */,
 				7BEE8BBE1C136C68000C7521 /* LaunchScreen.storyboard in Resources */,
 				7BEE8BBB1C136C68000C7521 /* Assets.xcassets in Resources */,
 				7B68D3691C13AB5800B9CA58 /* 10.jpeg in Resources */,
+				93BA72C91C13E8AB00AE6DA2 /* 4star.png in Resources */,
 				7BEE8BB91C136C68000C7521 /* Main.storyboard in Resources */,
 				7B68D36F1C13C65100B9CA58 /* ham.jpg in Resources */,
+				93BA72C41C13D62200AE6DA2 /* shake.jpg in Resources */,
 				7B68D3571C13A9E700B9CA58 /* 1.jpeg in Resources */,
 				7B68D3731C13C71E00B9CA58 /* chicken.jpg in Resources */,
 				7B68D3791C13C7FD00B9CA58 /* rice.jpg in Resources */,

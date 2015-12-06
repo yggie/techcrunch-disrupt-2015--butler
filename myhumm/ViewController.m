@@ -14,6 +14,7 @@
 
 @interface ViewController () {
     NSDateFormatter *formatter;
+    UIActivityIndicatorView *indicator;
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -36,6 +37,14 @@
     
     self->formatter = [NSDateFormatter new];
     [self->formatter setDateFormat:@"HH:mm"];
+    
+    self->indicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    self->indicator.frame = CGRectMake(0.0, 0.0, self.view.bounds.size.width, self.view.bounds.size.height);
+    self->indicator.center = self.view.center;
+    [self->indicator setBackgroundColor:[UIColor colorWithWhite:0.0f alpha:0.6f]];
+    [self.view addSubview:self->indicator];
+    [self->indicator bringSubviewToFront:self.view];
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = TRUE;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,6 +60,10 @@
 - (void)viewDidDisappear:(BOOL)animated {
     [self resignFirstResponder];
     [super viewDidAppear:animated];
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 #pragma mark DELEGATE
@@ -103,9 +116,13 @@
 }
 
 - (void)loadNewSchedule {
+    [self->indicator startAnimating];
     [self.service getNewSchedule:^(NSArray *scheduleItems) {
+        NSLog(@"New schedule LOADED");
         self.scheduleItems = scheduleItems;
-        [self.tableView reloadData];
+        
+        [self->indicator stopAnimating];
+        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationLeft];
     }];
 }
 

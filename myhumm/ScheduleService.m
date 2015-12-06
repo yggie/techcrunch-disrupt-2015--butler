@@ -63,6 +63,8 @@
     [self loadPlaylist:^(NSArray<Song*>* songs) {
         NSMutableArray *array = [NSMutableArray new];
         
+        NSLog(@"Starting to load SONGS");
+        
         for (Song *song in songs) {
             NSDate *startDate = [self dateAt:20 :0];
             NSDate *endDate = [self dateAt:21 :0];
@@ -75,6 +77,8 @@
             ScheduleItem *item = [[ScheduleItem alloc] initWithInfo:startDate :endDate :song :image];
             [array addObject:item];
         }
+        
+        NSLog(@"Ended loading SONGS");
         
         Sky *skyInfo = [self pickSkyProgram];
         Food *foodInfo = [self pickFood];
@@ -133,16 +137,19 @@
 
 -(void)loadPlaylist:(void(^)(NSArray<Song*>*))callback {
     [self authenticateHumm:^{
+        NSLog(@"Humm AUTHENTICATED");
         [self->humm.playlists getRecentWithLimit:20 offset:0 success:^(NSArray<Playlist*> *playlists) {
             Playlist *playlist = [playlists objectAtIndex:((NSUInteger)arc4random_uniform([playlists count]))];
             
-            [self->humm.playlists getSongs:playlist._id limit:10 offset:0 success:^(NSArray<Song *> *songs) {
+            NSLog(@"Found %i playlists", (NSInteger)[playlists count]);
+            
+            [self->humm.playlists getSongs:playlist._id limit:1 offset:0 success:^(NSArray<Song *> *songs) {
                 callback(songs);
             } error:^(NSError *error) {
-                NSLog(error);
+                NSLog(@"ERROR:", error);
             }];
         } error:^(NSError *error) {
-            NSLog(error);
+            NSLog(@"ERROR:", error);
         }];
     }];
 }

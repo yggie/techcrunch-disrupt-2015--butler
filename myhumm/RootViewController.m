@@ -35,6 +35,10 @@
     [super viewDidDisappear:animated];
 }
 
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 /*
 #pragma mark - Navigation
 
