@@ -380,10 +380,10 @@
 				93BA72B91C1392D300AE6DA2 /* ScheduleItem.m */,
 				7B68D3521C139B4A00B9CA58 /* Sky.h */,
 				7B68D36A1C13C0EB00B9CA58 /* Food.h */,
+				93445B361C14196300A3E5D6 /* CineworldFilm.m */,
 				7B68D36B1C13C0EB00B9CA58 /* Food.m */,
 				7B68D3531C139B4A00B9CA58 /* Sky.m */,
 				93445B351C14196300A3E5D6 /* CineworldFilm.h */,
-				93445B361C14196300A3E5D6 /* CineworldFilm.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";

@@ -90,7 +90,7 @@
         
         for (Song *song in songs) {
             NSString *songTimeInfoText = @"2 hrs";
-            NSString *songSubtitle = [song.genres componentsJoinedByString:@", "];
+            NSString *songSubtitle = [[[NSSet setWithArray:song.genres] allObjects] componentsJoinedByString:@", "];
             
             NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/%@", @"http://i.ytimg.com/vi", [song.foreign_ids objectForKey:@"youtube"], @"mqdefault.jpg"]];
             NSData *data = [NSData dataWithContentsOfURL:url];
@@ -104,8 +104,6 @@
         
         NSString *json = [self getDataFrom:@"http://www2.cineworld.co.uk/api/quickbook/films?key=tQV@xYvf&cinema=23&date=20151208&full=true"];
         NSError *error = nil;
-        
-        NSLog(json);
         
         CineworldApiWrapper *wrapper = [[CineworldApiWrapper alloc] initWithString:json error:&error];
         
