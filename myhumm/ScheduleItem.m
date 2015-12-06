@@ -10,13 +10,14 @@
 
 @implementation ScheduleItem
 
-- (id)initWithInfo:(NSDate *)startTime :(NSDate *)endTime :(NSObject*)info {
+- (id)initWithInfo:(NSDate *)startTime :(NSDate *)endTime :(NSObject*)info :(UIImage*)image{
     self = [super init];
     
     if (self) {
         self.startTime = startTime;
         self.endTime = endTime;
         self.info = info;
+        self.image = image;
     }
     
     return self;

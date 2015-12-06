@@ -13,6 +13,6 @@
 }
 
 - (ScheduleService*)init;
-- (NSArray*)someArray;
+- (void)getNewSchedule:(void(^)(NSArray*))callback;
 
 @end

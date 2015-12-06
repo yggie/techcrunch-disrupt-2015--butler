@@ -15,6 +15,7 @@
 
 @implementation ScheduleService {
     HummAPI *humm;
+    BOOL hummAuthenticated;
 }
 
 - (ScheduleService*)init {
@@ -23,33 +24,30 @@
     self->calendar = [NSCalendar currentCalendar];
     
     self->humm = [HummAPI sharedManager];
-    [self authenticateHumm];
+    self->hummAuthenticated = false;
 
     return self;
 }
 
-- (NSArray*)someArray {
-    NSMutableArray *array = [NSMutableArray new];
-
-    NSDate *startDate = [self dateAt:20 :0];
-    NSDate *endDate = [self dateAt:21 :0];
-    ScheduleItem *item = [[ScheduleItem alloc] initWithInfo:startDate :endDate :[NSNumber numberWithInt:arc4random_uniform(74)]];
-
-    [array addObject:item];
-
-    NSDate *startDate1 = [self dateAt:21 :0];
-    NSDate *endDate1 = [self dateAt:22 :30];
-    ScheduleItem *item1 = [[ScheduleItem alloc] initWithInfo:startDate1 :endDate1 :[NSNumber numberWithInt:arc4random_uniform(74)]];
-
-    [array addObject:item1];
-
-    NSDate *startDate2 = [self dateAt:22 :30];
-    NSDate *endDate2 = [self dateAt:23 :45];
-    ScheduleItem *item2 = [[ScheduleItem alloc] initWithInfo:startDate2 :endDate2 :[NSNumber numberWithInt:arc4random_uniform(74)]];
-
-    [array addObject:item2];
-
-    return array;
+- (void)getNewSchedule:(void(^)(NSArray*))callback {
+    [self loadPlaylist:^(NSArray<Song*>* songs) {
+        NSMutableArray *array = [NSMutableArray new];
+        
+        for (Song *song in songs) {
+            NSDate *startDate = [self dateAt:20 :0];
+            NSDate *endDate = [self dateAt:21 :0];
+            
+            NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/%@", @"http://i.ytimg.com/vi", [song.foreign_ids objectForKey:@"youtube"], @"mqdefault.jpg"]];
+            NSData *data = [NSData dataWithContentsOfURL:url];
+            
+            UIImage *image = [[UIImage alloc] initWithData:data];
+            
+            ScheduleItem *item = [[ScheduleItem alloc] initWithInfo:startDate :endDate :song :image];
+            [array addObject:item];
+        }
+        
+        callback(array);
+    }];
 }
 
 - (NSDate*)dateAt:(NSInteger)hour :(NSInteger)minute {
@@ -64,23 +62,38 @@
 
 #pragma mark HUMM
 
--(void)authenticateHumm{
-    [self->humm loginWithUsername:@"kanke" password:@"Windows6" onLoginSuccess:^{
-        [self getPlaylist];
-    } onLoginError:^(NSError *error) {
-        NSLog(@"There was an error");
-    }];
+-(void)authenticateHumm:(void(^)(void))callback {
+    if (self->hummAuthenticated) {
+        callback();
+    } else {
+        [self->humm loginWithUsername:@"kanke" password:@"Windows6" onLoginSuccess:^{
+            NSLog(@"Login successful");
+            self->hummAuthenticated = true;
+            callback();
+        } onLoginError:^(NSError *error) {
+            NSLog(@"There was an error");
+        }];
+    }
 }
 
--(void)getPlaylist {
-    [self->humm.playlists getSongs:@"56403fd834017507dba11880" limit:20 offset:0 success:^(NSArray<Song *> *response) {
-        
-        for (Song *song in response) {
-            NSLog(@"song name = %@", song.title);
-        }
-        
-    } error:^(NSError *error) {
-        
+-(void)loadPlaylist:(void(^)(NSArray<Song*>*))callback {
+    [self authenticateHumm:^{
+        [self->humm.playlists getRecentWithLimit:20 offset:0 success:^(NSArray<Playlist*> *playlists) {
+            Playlist *playlist = [playlists objectAtIndex:((NSUInteger)arc4random_uniform([playlists count]))];
+            
+            [self->humm.playlists getSongs:playlist._id limit:10 offset:0 success:^(NSArray<Song *> *songs) {
+                
+                callback(songs);
+                //        for (Song *song in response) {
+                //            NSLog(@"song name = %@", song.title);
+                //        }
+                
+            } error:^(NSError *error) {
+                
+            }];
+        } error:^(NSError *error) {
+            
+        }];
     }];
 }
 

@@ -10,6 +10,7 @@
 #import "ScheduleService.h"
 #import "ScheduleItem.h"
 #import "Sky.h"
+#import "Song.h"
 
 @interface ViewController () {
     NSDateFormatter *formatter;
@@ -31,7 +32,7 @@
     
     self.service = [ScheduleService new];
     
-    self.scheduleItems = [self.service someArray];
+    [self loadNewSchedule];
     
     self->formatter = [NSDateFormatter new];
     [self->formatter setDateFormat:@"HH:mm"];
@@ -96,9 +97,14 @@
     UILabel *endTimeLabel = (UILabel*)[cell viewWithTag:3];
     endTimeLabel.text = [self->formatter stringFromDate:item.endTime];
     
-    if ([item.info isKindOfClass:[NSNumber class]]) {
+    UIImageView *imageView = (UIImageView*)[cell viewWithTag:4];
+    imageView.image = item.image;
+    
+    if ([item.info isKindOfClass:[Song class]]) {
         UILabel *label = (UILabel*)[cell viewWithTag:1];
-        label.text = [((NSNumber*)item.info) stringValue];
+        Song *song = (Song*)item.info;
+        
+        label.text = song.title;
     }
     
     return cell;
@@ -112,9 +118,15 @@
 
 - (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     if (motion == UIEventSubtypeMotionShake) {
-        self.scheduleItems = [self.service someArray];
-        [self.tableView reloadData];
+        [self loadNewSchedule];
     }
+}
+
+- (void)loadNewSchedule {
+    [self.service getNewSchedule:^(NSArray *scheduleItems) {
+        self.scheduleItems = scheduleItems;
+        [self.tableView reloadData];
+    }];
 }
 
 @end
