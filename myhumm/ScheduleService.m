@@ -13,11 +13,14 @@
 #import "ScheduleService.h"
 #import "ScheduleItem.h"
 #import "Sky.h"
+#import "Food.h"
+
 
 @implementation ScheduleService {
     HummAPI *humm;
     BOOL hummAuthenticated;
     NSArray<Sky*> *movies;
+    NSArray<Food*> *foods;
 }
 
 - (ScheduleService*)init {
@@ -40,7 +43,18 @@
     [movieList addObject:[[Sky new] name:@"Chuggington: Back Up Brewster" :@"cartoons" :@"9.jpeg"]];
     [movieList addObject:[[Sky new] name:@"Get Your Rocks Off!" :@"rock" :@"10.jpeg"]];
     
+    
+    NSMutableArray<Food*> *foodList = [NSMutableArray new];
+    [foodList addObject:[[Food new] name:@"Ham & Mushroom Pizza" :@"30 minutes" :@"ham.jpg" :4 ]];
+    [foodList addObject:[[Food new] name:@"Lamb Burrito" :@"15 minutes" :@"burrito.jpg" :5 ]];
+    [foodList addObject:[[Food new] name:@"Tandoori Chicken" :@"3 minutes" :@"chicken.jpg" :3 ]];
+    [foodList addObject:[[Food new] name:@"Pumpkin Ravioli" :@"60 minutes" :@"pumpkin.jpg" :2 ]];
+    [foodList addObject:[[Food new] name:@"Fresh Crab Spaghetti" :@"7 minutes" :@"pasta.jpg" :1 ]];
+    [foodList addObject:[[Food new] name:@"Railway Beef Rice" :@"5 minutes" :@"rice.jpg" :4 ]];
+    
+    
     self->movies = movieList;
+    self->foods = foodList;
 
     return self;
 }
@@ -63,6 +77,8 @@
         }
         
         Sky *skyInfo = [self pickSkyProgram];
+        Food *foodInfo = [self pickFood];
+        NSLog(@"food info.....%@" , foodInfo.name);
         NSDate *skyStartDate = [self dateAt:22 :0];
         NSDate *skyEndDate = [self dateAt:23 :0];
         
@@ -90,6 +106,14 @@
     int random = arc4random_uniform([self->movies count]);
     return (Sky *)[self->movies objectAtIndex:random];
 }
+
+
+-(Food *)pickFood{
+//    NSLog([self->foods count]);
+    int random = arc4random_uniform([self->foods count]);
+    return (Food *)[self->foods objectAtIndex:random];
+}
+
 
 #pragma mark HUMM
 
