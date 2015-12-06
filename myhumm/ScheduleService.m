@@ -12,10 +12,12 @@
 #import "Song.h"
 #import "ScheduleService.h"
 #import "ScheduleItem.h"
+#import "Sky.h"
 
 @implementation ScheduleService {
     HummAPI *humm;
     BOOL hummAuthenticated;
+    NSArray<Sky*> *movies;
 }
 
 - (ScheduleService*)init {
@@ -25,6 +27,20 @@
     
     self->humm = [HummAPI sharedManager];
     self->hummAuthenticated = false;
+    
+    NSMutableArray<Sky*> *movieList = [NSMutableArray new];
+    [movieList addObject:[[Sky new] name:@"RTÉ News: One O'Clock and Farming Weather" :@"news" :@"1.jpeg"]];
+    [movieList addObject:[[Sky new] name:@"The Simpsons: The Changing of the Guardian" :@"animation;comedy" :@"2.jpeg"]];
+    [movieList addObject:[[Sky new] name:@"Henry Danger: Mo' Danger, Mo' Problems" :@"comedy" :@"3.jpeg"]];
+    [movieList addObject:[[Sky new] name:@"Through the Night" :@"news" :@"4.jpeg"]];
+    [movieList addObject:[[Sky new] name:@"The Green Green Grass: Brothers and Sisters" :@"comedy" :@"5.jpeg"]];
+    [movieList addObject:[[Sky new] name:@"Family Guy: Untitled Griffin Family History" :@"animation;comedy" :@"6.jpeg"]];
+    [movieList addObject:[[Sky new] name:@"Austin & Ally: Relationships & Red Carpets" :@"comedy" :@"7.jpeg"]];
+    [movieList addObject:[[Sky new] name:@"Hospital Sydney" :@"medical;reality" :@"8.jpeg"]];
+    [movieList addObject:[[Sky new] name:@"Chuggington: Back Up Brewster" :@"cartoons" :@"9.jpeg"]];
+    [movieList addObject:[[Sky new] name:@"Get Your Rocks Off!" :@"rock" :@"10.jpeg"]];
+    
+    self->movies = movieList;
 
     return self;
 }
@@ -46,6 +62,14 @@
             [array addObject:item];
         }
         
+        Sky *skyInfo = [self pickSkyProgram];
+        NSDate *skyStartDate = [self dateAt:22 :0];
+        NSDate *skyEndDate = [self dateAt:23 :0];
+        
+        ScheduleItem *skyItem = [[ScheduleItem alloc] initWithInfo:skyStartDate :skyEndDate :skyInfo :skyInfo.image];
+        
+        [array addObject:skyItem];
+        
         callback(array);
     }];
 }
@@ -58,6 +82,13 @@
     [components setSecond:0];
 
     return [self->calendar dateFromComponents:components];
+}
+
+#pragma mark SKY
+
+-(Sky *)pickSkyProgram{
+    int random = arc4random_uniform([self->movies count]);
+    return (Sky *)[self->movies objectAtIndex:random];
 }
 
 #pragma mark HUMM
@@ -82,17 +113,12 @@
             Playlist *playlist = [playlists objectAtIndex:((NSUInteger)arc4random_uniform([playlists count]))];
             
             [self->humm.playlists getSongs:playlist._id limit:10 offset:0 success:^(NSArray<Song *> *songs) {
-                
                 callback(songs);
-                //        for (Song *song in response) {
-                //            NSLog(@"song name = %@", song.title);
-                //        }
-                
             } error:^(NSError *error) {
-                
+                NSLog(error);
             }];
         } error:^(NSError *error) {
-            
+            NSLog(error);
         }];
     }];
 }
