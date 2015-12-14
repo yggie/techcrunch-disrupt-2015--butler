@@ -73,9 +73,20 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     ScheduleItem *item = [self.scheduleItems objectAtIndex:indexPath.row];
     
-    ABPeoplePickerNavigationController *picker = [[ABPeoplePickerNavigationController alloc] init];
-    picker.peoplePickerDelegate = self;
-    [self presentModalViewController:picker animated:YES];
+    if ([item.info isKindOfClass:[Song class]]) {
+        Song *song = (Song*)item.info;
+        
+        //
+//        [[UIApplication sharedApplication] openURL:
+//         [NSURL URLWithString:[NSString stringWithFormat:@"%@:%@", @"spotify://track", [song.foreign_ids objectForKey:@"spotify"]]]];
+        
+        [[UIApplication sharedApplication] openURL:
+         [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@", @"youtube://watch", [song.foreign_ids objectForKey:@"youtube"]]]];
+    } else {
+        ABPeoplePickerNavigationController *picker = [[ABPeoplePickerNavigationController alloc] init];
+        picker.peoplePickerDelegate = self;
+        [self presentModalViewController:picker animated:YES];
+    }
 }
 
 - (void)peoplePickerNavigationControllerDidCancel:
@@ -123,7 +134,6 @@
 //    self.phoneNumber.text = phone;
     CFRelease(phoneNumbers);
 }
-
 
 #pragma mark DATA SOURCE
 

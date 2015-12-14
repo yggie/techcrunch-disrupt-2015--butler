@@ -51,6 +51,7 @@
 		93445B341C14152800A3E5D6 /* musicft.png in Resources */ = {isa = PBXBuildFile; fileRef = 93445B311C14152800A3E5D6 /* musicft.png */; };
 		93445B371C14196300A3E5D6 /* CineworldFilm.m in Sources */ = {isa = PBXBuildFile; fileRef = 93445B361C14196300A3E5D6 /* CineworldFilm.m */; };
 		93445B391C142A7100A3E5D6 /* play_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 93445B381C142A7100A3E5D6 /* play_button.png */; };
+		93445B3B1C144D5000A3E5D6 /* Default-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93445B3A1C144D5000A3E5D6 /* Default-568@2x.png */; };
 		93BA72BA1C1392D300AE6DA2 /* ScheduleItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BA72B91C1392D300AE6DA2 /* ScheduleItem.m */; };
 		93BA72BD1C139C6700AE6DA2 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93BA72BC1C139C6700AE6DA2 /* RootViewController.m */; };
 		93BA72C41C13D62200AE6DA2 /* shake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 93BA72C31C13D62200AE6DA2 /* shake.jpg */; };
@@ -151,6 +152,7 @@
 		93445B351C14196300A3E5D6 /* CineworldFilm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CineworldFilm.h; sourceTree = "<group>"; };
 		93445B361C14196300A3E5D6 /* CineworldFilm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CineworldFilm.m; sourceTree = "<group>"; };
 		93445B381C142A7100A3E5D6 /* play_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_button.png; sourceTree = "<group>"; };
+		93445B3A1C144D5000A3E5D6 /* Default-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568@2x.png"; sourceTree = "<group>"; };
 		93BA72B81C1392D300AE6DA2 /* ScheduleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleItem.h; sourceTree = "<group>"; };
 		93BA72B91C1392D300AE6DA2 /* ScheduleItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleItem.m; sourceTree = "<group>"; };
 		93BA72BB1C139C6700AE6DA2 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 		7B68D3551C13A87C00B9CA58 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				93445B3A1C144D5000A3E5D6 /* Default-568@2x.png */,
 				93445B381C142A7100A3E5D6 /* play_button.png */,
 				93445B2F1C14152800A3E5D6 /* foodft.png */,
 				93445B301C14152800A3E5D6 /* movieft.png */,
@@ -458,7 +461,7 @@
 				TargetAttributes = {
 					7BEE8BAA1C136C68000C7521 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = 67MCGJC5M4;
+						DevelopmentTeam = 9BP6WZQ22X;
 					};
 					7BEE8BC31C136C69000C7521 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -521,6 +524,7 @@
 				93BA72C41C13D62200AE6DA2 /* shake.jpg in Resources */,
 				7B68D3571C13A9E700B9CA58 /* 1.jpeg in Resources */,
 				7B68D3731C13C71E00B9CA58 /* chicken.jpg in Resources */,
+				93445B3B1C144D5000A3E5D6 /* Default-568@2x.png in Resources */,
 				7B68D3791C13C7FD00B9CA58 /* rice.jpg in Resources */,
 				93445B391C142A7100A3E5D6 /* play_button.png in Resources */,
 				7B68D3771C13C7B200B9CA58 /* pasta.jpg in Resources */,
@@ -760,14 +764,19 @@
 			baseConfigurationReference = 927F1D0A3E548D6CEE8DA98E /* Pods-myhumm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = myhumm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.myhumm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -776,14 +785,19 @@
 			baseConfigurationReference = 21661BFA046EA132D795AF5B /* Pods-myhumm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = myhumm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.myhumm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
